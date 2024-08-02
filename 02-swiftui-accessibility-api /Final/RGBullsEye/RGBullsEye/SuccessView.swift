@@ -39,7 +39,6 @@ struct SuccessView: View {
   let score: Int
   let target: RGB
   @Binding var guess: RGB
-  
   var scoreAnnouncement: AttributedString {
     var scoreString = AttributedString("You scored \(score) points on this color.")
     scoreString.accessibilitySpeechAnnouncementPriority = .high

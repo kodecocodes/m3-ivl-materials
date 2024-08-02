@@ -17,7 +17,7 @@
 		CD405F022536AA720062B1CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD405F012536AA720062B1CC /* Preview Assets.xcassets */; };
 		CDB7B713255B8C850020D090 /* NeuButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7B712255B8C850020D090 /* NeuButtonStyle.swift */; };
 		CDB7B716255B903C0020D090 /* BevelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB7B715255B903C0020D090 /* BevelText.swift */; };
-		CDD697682C465C7200080B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD697672C465C7200080B0F /* LaunchScreen.storyboard */; };
+		CDD697662C465C0A00080B0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD697652C465C0A00080B0F /* LaunchScreen.storyboard */; };
 		CDF0F612255793D500C3DE7E /* ColorCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0F611255793D500C3DE7E /* ColorCircle.swift */; };
 		CDF0F61725579AA000C3DE7E /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF0F61625579AA000C3DE7E /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +35,7 @@
 		CD405F032536AA720062B1CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB7B712255B8C850020D090 /* NeuButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuButtonStyle.swift; sourceTree = "<group>"; };
 		CDB7B715255B903C0020D090 /* BevelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BevelText.swift; sourceTree = "<group>"; };
-		CDD697672C465C7200080B0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDD697652C465C0A00080B0F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDF0F611255793D500C3DE7E /* ColorCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCircle.swift; sourceTree = "<group>"; };
 		CDF0F61625579AA000C3DE7E /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +80,7 @@
 				CDF08BAC253E84F10061DB4A /* Model */,
 				CD405EFE2536AA720062B1CC /* Assets.xcassets */,
 				CD405F032536AA720062B1CC /* Info.plist */,
-				CDD697672C465C7200080B0F /* LaunchScreen.storyboard */,
+				CDD697652C465C0A00080B0F /* LaunchScreen.storyboard */,
 				CD405F002536AA720062B1CC /* Preview Content */,
 			);
 			path = RGBullsEye;
@@ -131,9 +131,8 @@
 		CD405EEF2536AA700062B1CC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = Kodeco;
 				TargetAttributes = {
 					CD405EF62536AA700062B1CC = {
@@ -164,7 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDD697682C465C7200080B0F /* LaunchScreen.storyboard in Resources */,
+				CDD697662C465C0A00080B0F /* LaunchScreen.storyboard in Resources */,
 				CD405F022536AA720062B1CC /* Preview Assets.xcassets in Resources */,
 				CD405EFF2536AA720062B1CC /* Assets.xcassets in Resources */,
 			);
@@ -252,7 +251,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -314,7 +312,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -340,7 +337,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RGBullsEye/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 35ERK77LXE;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RGBullsEye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
@@ -366,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"RGBullsEye/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 35ERK77LXE;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = RGBullsEye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
