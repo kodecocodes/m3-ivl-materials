@@ -5,39 +5,15 @@
       "comment" : "Displays [number] of [color] [item]",
       "localizations" : {
         "en" : {
-          "variations" : {
-            "plural" : {
-              "one" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%1$lld %2$@ %3$@"
-                }
-              },
-              "other" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%1$lld %2$@ %3$@s"
-                }
-              }
-            }
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "^[%1$lld %2$@ %3$@](inflect: true)"
           }
         },
         "fr" : {
-          "variations" : {
-            "plural" : {
-              "one" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%1$lld %3$@ %2$@"
-                }
-              },
-              "other" : {
-                "stringUnit" : {
-                  "state" : "translated",
-                  "value" : "%1$lld %3$@s %2$@"
-                }
-              }
-            }
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "^[%1$lld %3$@ %2$@](inflect: true)"
           }
         }
       }
@@ -48,7 +24,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Noir"
+            "value" : "^[Noir](agreeWithConcept: 1)"
           }
         }
       }
@@ -59,7 +35,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bleu"
+            "value" : "^[Bleu](agreeWithConcept: 1)"
           }
         }
       }
@@ -70,7 +46,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vert"
+            "value" : "^[Vert](agreeWithConcept: 1)"
           }
         }
       }
@@ -81,7 +57,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rouge"
+            "value" : "^[Rouge](agreeWithConcept: 1)"
           }
         }
       }
@@ -144,7 +120,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "C'est un %@ d'homme qui n'est jamais aussi bien portée que par une femme."
+            "value" : "C'est ^[un %@](inflect: true) d'homme qui n'est jamais aussi bien ^[porté](agreeWithArgument: 1) que par une femme."
           }
         }
       }

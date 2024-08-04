@@ -33,13 +33,19 @@
 import SwiftUI
 
 struct ContentView: View {
-  @State var colorChoice: String?
+  @State var colorChoice: AttributedString?
   @State var quantity = 1
   let item = Item(
 //    name: "Shirt",
-    name: String(localized: "Shirt",
+    name: String(localized: "Pair of shoes",
                 comment: "item of clothing"),
     imageName: "tshirt.fill")
+  
+  var options: AttributedString.LocalizationOptions {
+    var options = AttributedString.LocalizationOptions()
+    options.concepts = [.localizedPhrase(item.name)]
+    return options
+  }
   
   var body: some View {
     VStack {
@@ -68,28 +74,30 @@ struct ContentView: View {
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Red", comment: "color"),
+                      color: AttributedString(localized: "Red", comment: "color"),
                       fgColor: .red,
-                      imageName: item.imageName)
+                      imageName: item.imageName, item: item)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Blue", comment: "color"),
+                      color: AttributedString(localized: "Blue",
+                                              options: options,
+                                              comment: "color"),
                       fgColor: .blue,
-                      imageName: item.imageName)
+                      imageName: item.imageName, item: item)
         }
         
         Divider()
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Green", comment: "color"),
+                      color: AttributedString(localized: "Green", options: options, comment: "color"),
                       fgColor: .green,
-                      imageName: item.imageName)
+                      imageName: item.imageName, item: item)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Black", comment: "color"),
+                      color: AttributedString(localized: "Black", comment: "color"),
                       fgColor: .black,
-                      imageName: item.imageName)
+                      imageName: item.imageName, item: item)
         }
         
         Divider()
@@ -97,7 +105,7 @@ struct ContentView: View {
         GridRow {
           if let colorChoice {
             HStack {
-              Stepper(value: $quantity) {
+              Stepper(value: $quantity, in: 1...10) {
                 Text("\(quantity) \(colorChoice) \(item.name.lowercased())",
                      comment: "Displays [number] of [color] [item]")
                   .padding(.horizontal, 60)
@@ -120,12 +128,14 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct ColorButton: View {
-  @Binding var colorChoice: String?
-  let color: String
+  @Binding var colorChoice: AttributedString?
+  let color: AttributedString
   let fgColor: Color
   let imageName: String
+  let item: Item
+  
   var body: some View {
-    Button(action: { colorChoice = color.lowercased() }) {
+    Button(action: { colorChoice = color }) {
       VStack {
         Image(systemName: imageName)
           .foregroundColor(fgColor)
