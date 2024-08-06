@@ -97,7 +97,7 @@ struct ContentView: View {
         GridRow {
           if let colorChoice {
             HStack {
-              Stepper(value: $quantity) {
+              Stepper(value: $quantity, in: 1...10) {
                 Text("\(quantity) \(colorChoice) \(item.name.lowercased())",
                      comment: "Displays [number] of [color] [item]")
                   .padding(.horizontal, 60)
