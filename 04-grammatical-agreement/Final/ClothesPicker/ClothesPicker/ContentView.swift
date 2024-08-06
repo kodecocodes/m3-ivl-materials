@@ -36,16 +36,16 @@ struct ContentView: View {
   @State var colorChoice: AttributedString?
   @State var quantity = 1
   let item = Item(
-    name: String(localized: "Pair of shoes",
+    name: String(localized: "Shirt",
                 comment: "item of clothing"),
     imageName: "tshirt.fill")
-  
+
   var options: AttributedString.LocalizationOptions {
     var options = AttributedString.LocalizationOptions()
     options.concepts = [.localizedPhrase(item.name)]
     return options
   }
-  
+
   var body: some View {
     VStack {
       Grid {
@@ -73,30 +73,28 @@ struct ContentView: View {
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(localized: "Red", comment: "color"),
+                      color: AttributedString(localized: "red", options: options, comment: "color"),
                       fgColor: .red,
-                      imageName: item.imageName, item: item)
+                      imageName: item.imageName)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(localized: "Blue",
-                                              options: options,
-                                              comment: "color"),
+                      color: AttributedString(localized: "blue", options: options, comment: "color"),
                       fgColor: .blue,
-                      imageName: item.imageName, item: item)
+                      imageName: item.imageName)
         }
         
         Divider()
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(localized: "Green", options: options, comment: "color"),
+                      color: AttributedString(localized: "green", options: options, comment: "color"),
                       fgColor: .green,
-                      imageName: item.imageName, item: item)
+                      imageName: item.imageName)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(localized: "Black", comment: "color"),
+                      color: AttributedString(localized: "black", options: options, comment: "color"),
                       fgColor: .black,
-                      imageName: item.imageName, item: item)
+                      imageName: item.imageName)
         }
         
         Divider()
@@ -131,8 +129,6 @@ struct ColorButton: View {
   let color: AttributedString
   let fgColor: Color
   let imageName: String
-  let item: Item
-  
   var body: some View {
     Button(action: { colorChoice = color }) {
       VStack {

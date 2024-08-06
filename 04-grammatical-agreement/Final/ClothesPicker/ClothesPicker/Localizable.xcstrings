@@ -18,46 +18,46 @@
         }
       }
     },
-    "Black" : {
+    "black" : {
       "comment" : "color",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "^[Noir](agreeWithConcept: 1)"
+            "value" : "^[noir](agreeWithConcept: 1)"
           }
         }
       }
     },
-    "Blue" : {
+    "blue" : {
       "comment" : "color",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "^[Bleu](agreeWithConcept: 1)"
+            "value" : "^[bleu](agreeWithConcept: 1)"
           }
         }
       }
     },
-    "Green" : {
+    "green" : {
       "comment" : "color",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "^[Vert](agreeWithConcept: 1)"
+            "value" : "^[vert](agreeWithConcept: 1)"
           }
         }
       }
     },
-    "Red" : {
+    "red" : {
       "comment" : "color",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "^[Rouge](agreeWithConcept: 1)"
+            "value" : "^[rouge](agreeWithConcept: 1)"
           }
         }
       }

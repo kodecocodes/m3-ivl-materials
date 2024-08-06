@@ -67,12 +67,12 @@ struct ContentView: View {
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Red", comment: "color"),
+                      color: String(localized: "red", comment: "color"),
                       fgColor: .red,
                       imageName: item.imageName)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Blue", comment: "color"),
+                      color: String(localized: "blue", comment: "color"),
                       fgColor: .blue,
                       imageName: item.imageName)
         }
@@ -81,12 +81,12 @@ struct ContentView: View {
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Green", comment: "color"),
+                      color: String(localized: "green", comment: "color"),
                       fgColor: .green,
                       imageName: item.imageName)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Black", comment: "color"),
+                      color: String(localized: "black", comment: "color"),
                       fgColor: .black,
                       imageName: item.imageName)
         }
@@ -96,7 +96,7 @@ struct ContentView: View {
         GridRow {
           if let colorChoice {
             HStack {
-              Stepper(value: $quantity) {
+              Stepper(value: $quantity, in: 1...10) {
                 Text("\(quantity) \(colorChoice) \(item.name.lowercased())",
                      comment: "Displays [number] of [color] [item]")
                   .padding(.horizontal, 60)
@@ -124,7 +124,7 @@ struct ColorButton: View {
   let fgColor: Color
   let imageName: String
   var body: some View {
-    Button(action: { colorChoice = color.lowercased() }) {
+    Button(action: { colorChoice = color }) {
       VStack {
         Image(systemName: imageName)
           .foregroundColor(fgColor)

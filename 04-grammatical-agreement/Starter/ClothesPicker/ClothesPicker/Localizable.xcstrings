@@ -42,8 +42,20 @@
         }
       }
     },
+    "black" : {
+      "comment" : "color",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "noir"
+          }
+        }
+      }
+    },
     "Black" : {
       "comment" : "color",
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -53,8 +65,20 @@
         }
       }
     },
+    "blue" : {
+      "comment" : "color",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bleu"
+          }
+        }
+      }
+    },
     "Blue" : {
       "comment" : "color",
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -64,8 +88,20 @@
         }
       }
     },
+    "green" : {
+      "comment" : "color",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "vert"
+          }
+        }
+      }
+    },
     "Green" : {
       "comment" : "color",
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -75,8 +111,20 @@
         }
       }
     },
+    "red" : {
+      "comment" : "color",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "rouge"
+          }
+        }
+      }
+    },
     "Red" : {
       "comment" : "color",
+      "extractionState" : "stale",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
