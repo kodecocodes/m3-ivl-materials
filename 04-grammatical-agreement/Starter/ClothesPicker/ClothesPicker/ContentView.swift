@@ -36,7 +36,6 @@ struct ContentView: View {
   @State var colorChoice: String?
   @State var quantity = 1
   let item = Item(
-//    name: "Shirt",
     name: String(localized: "Shirt",
                 comment: "item of clothing"),
     imageName: "tshirt.fill")
