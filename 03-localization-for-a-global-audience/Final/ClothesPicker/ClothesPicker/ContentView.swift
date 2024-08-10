@@ -36,10 +36,13 @@ struct ContentView: View {
   @State var colorChoice: String?
   @State var quantity = 1
   let item = Item(
-//    name: "Shirt",
     name: String(localized: "Shirt",
                 comment: "item of clothing"),
     imageName: "tshirt.fill")
+  
+  let model = Model(name: "Sam",
+                    height: 170, size: "M",
+                    preferredTermsOfAddress: [])
   
   var body: some View {
     VStack {
@@ -53,13 +56,18 @@ struct ContentView: View {
           VStack {
             Text("This is a man's \(item.name.lowercased()) that is never worn as well as by a woman.",
                  comment: "Description of item, same for all items")
-              .multilineTextAlignment(.center)
               .padding(.horizontal, 40)
+            
             Divider()
+            
+            Text("🏃🏻‍➡️\(model.name) is \(model.height) cm tall. He wears size \(model.size).")
+  
+            Divider()
+            
             Text("Tap to select the color of your \(item.name.lowercased()):",
                  comment: "Instruction to user")
-              .multilineTextAlignment(.center)
           }
+          .multilineTextAlignment(.center)
           .gridCellColumns(2)
           .font(.body)
         }
@@ -68,12 +76,12 @@ struct ContentView: View {
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Red", comment: "color"),
+                      color: String(localized: "red", comment: "color"),
                       fgColor: .red,
                       imageName: item.imageName)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Blue", comment: "color"),
+                      color: String(localized: "blue", comment: "color"),
                       fgColor: .blue,
                       imageName: item.imageName)
         }
@@ -82,12 +90,12 @@ struct ContentView: View {
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Green", comment: "color"),
+                      color: String(localized: "green", comment: "color"),
                       fgColor: .green,
                       imageName: item.imageName)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "Black", comment: "color"),
+                      color: String(localized: "black", comment: "color"),
                       fgColor: .black,
                       imageName: item.imageName)
         }
@@ -125,7 +133,7 @@ struct ColorButton: View {
   let fgColor: Color
   let imageName: String
   var body: some View {
-    Button(action: { colorChoice = color.lowercased() }) {
+    Button(action: { colorChoice = color }) {
       VStack {
         Image(systemName: imageName)
           .foregroundColor(fgColor)

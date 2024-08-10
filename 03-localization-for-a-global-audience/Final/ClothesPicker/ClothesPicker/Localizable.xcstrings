@@ -42,46 +42,62 @@
         }
       }
     },
-    "Black" : {
-      "comment" : "color",
+    "🏃🏻‍➡️%@ is %lld cm tall. He wears size %@." : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "🏃🏻‍➡️%1$@ is %2$lld cm tall. He wears size %3$@."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Noir"
+            "value" : "🏃🏻‍➡️%1$@ mesure %2$lld cm. Il porte une taille %3$@."
           }
         }
       }
     },
-    "Blue" : {
+    "black" : {
       "comment" : "color",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bleu"
+            "value" : "noir"
           }
         }
       }
     },
-    "Green" : {
+    "blue" : {
       "comment" : "color",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vert"
+            "value" : "bleu"
           }
         }
       }
     },
-    "Red" : {
+    "green" : {
       "comment" : "color",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rouge"
+            "value" : "vert"
+          }
+        }
+      }
+    },
+    "red" : {
+      "comment" : "color",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "rouge"
           }
         }
       }
