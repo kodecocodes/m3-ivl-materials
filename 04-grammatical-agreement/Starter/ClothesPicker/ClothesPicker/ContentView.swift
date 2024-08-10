@@ -40,6 +40,10 @@ struct ContentView: View {
                 comment: "item of clothing"),
     imageName: "tshirt.fill")
   
+  let model = Model(name: "Sam",
+                    height: 170, size: "M",
+                    preferredTermsOfAddress: [])
+  
   var body: some View {
     VStack {
       Grid {
@@ -52,13 +56,18 @@ struct ContentView: View {
           VStack {
             Text("This is a man's \(item.name.lowercased()) that is never worn as well as by a woman.",
                  comment: "Description of item, same for all items")
-              .multilineTextAlignment(.center)
               .padding(.horizontal, 40)
+            
             Divider()
+            
+            Text("🏃🏻‍➡️\(model.name) is \(model.height) cm tall. He wears size \(model.size).")
+  
+            Divider()
+            
             Text("Tap to select the color of your \(item.name.lowercased()):",
                  comment: "Instruction to user")
-              .multilineTextAlignment(.center)
           }
+          .multilineTextAlignment(.center)
           .gridCellColumns(2)
           .font(.body)
         }

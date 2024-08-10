@@ -18,6 +18,22 @@
         }
       }
     },
+    "🏃🏻‍➡️%@ is %lld cm tall. ^[He](referentConcept: 2) wears size %@." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "🏃🏻‍➡️%1$@ is %2$lld cm tall. ^[He](referentConcept: 2) wears size %3$@."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🏃🏻‍➡️%1$@ mesure %2$lld cm. ^[Il](referentConcept: 2) porte une taille %3$@."
+          }
+        }
+      }
+    },
     "black" : {
       "comment" : "color",
       "localizations" : {
