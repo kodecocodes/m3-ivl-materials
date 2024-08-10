@@ -46,7 +46,8 @@ struct ContentView: View {
 
   var options: AttributedString.LocalizationOptions {
     var options = AttributedString.LocalizationOptions()
-    options.concepts = [.localizedPhrase(item.name), .termsOfAddress(model.preferredTermsOfAddress)]
+    options.concepts = [.localizedPhrase(item.name),
+                        .termsOfAddress(model.preferredTermsOfAddress)]
     return options
   }
 
@@ -69,9 +70,9 @@ struct ContentView: View {
             Text(
               AttributedString(
                 localized:
-                  "🏃🏻‍➡️\(model.name) is \(model.height) cm tall. ^[He](referentConcept: 2) wears size \(model.size).", 
+                  "🏃🏻‍➡️\(model.name) is \(model.height) cm tall. He wears size \(model.size).",
                 options: options))
-  
+
             Divider()
             
             Text("Tap to select the color of your \(item.name.lowercased()):",
@@ -86,12 +87,18 @@ struct ContentView: View {
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(localized: "red", options: options, comment: "color"),
+                      color: AttributedString(
+                        localized: "red",
+                        options: options,
+                        comment: "color"),
                       fgColor: .red,
                       imageName: item.imageName)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(localized: "blue", options: options, comment: "color"),
+                      color: AttributedString(
+                        localized: "blue",
+                        options: options,
+                        comment: "color"),
                       fgColor: .blue,
                       imageName: item.imageName)
         }
@@ -100,12 +107,18 @@ struct ContentView: View {
         
         GridRow {
           ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(localized: "green", options: options, comment: "color"),
+                      color: AttributedString(
+                        localized: "green",
+                        options: options,
+                        comment: "color"),
                       fgColor: .green,
                       imageName: item.imageName)
           
           ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(localized: "black", options: options, comment: "color"),
+                      color: AttributedString(
+                        localized: "black",
+                        options: options,
+                        comment: "color"),
                       fgColor: .black,
                       imageName: item.imageName)
         }

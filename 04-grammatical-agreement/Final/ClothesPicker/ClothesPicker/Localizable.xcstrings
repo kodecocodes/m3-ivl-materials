@@ -18,11 +18,11 @@
         }
       }
     },
-    "🏃🏻‍➡️%@ is %lld cm tall. ^[He](referentConcept: 2) wears size %@." : {
+    "🏃🏻‍➡️%@ is %lld cm tall. He wears size %@." : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "🏃🏻‍➡️%1$@ is %2$lld cm tall. ^[He](referentConcept: 2) wears size %3$@."
           }
         },

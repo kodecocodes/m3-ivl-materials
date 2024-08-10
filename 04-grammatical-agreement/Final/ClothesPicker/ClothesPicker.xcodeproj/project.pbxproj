@@ -14,7 +14,7 @@
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
 		CD42EFE72C5874D5006E6B34 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD42EFE62C5874D5006E6B34 /* Item.swift */; };
 		CD42EFEB2C588790006E6B34 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = CD42EFEA2C588790006E6B34 /* Localizable.xcstrings */; };
-		CD4A36852C633D04003C6715 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A36842C633D04003C6715 /* Model.swift */; };
+		CD4A36872C64A182003C6715 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A36862C64A182003C6715 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD42EFE62C5874D5006E6B34 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		CD42EFEA2C588790006E6B34 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		CD4A36842C633D04003C6715 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CD4A36862C64A182003C6715 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 				18D775C422AD944300AE281E /* ContentView.swift */,
 				CD42EFEA2C588790006E6B34 /* Localizable.xcstrings */,
 				CD42EFE62C5874D5006E6B34 /* Item.swift */,
-				CD4A36842C633D04003C6715 /* Model.swift */,
+				CD4A36862C64A182003C6715 /* Model.swift */,
 				18D775C622AD944400AE281E /* Assets.xcassets */,
 				18D775DA22AD963800AE281E /* LaunchScreen.storyboard */,
 				18D775CE22AD944400AE281E /* Info.plist */,
@@ -183,7 +183,7 @@
 				CD42EFE72C5874D5006E6B34 /* Item.swift in Sources */,
 				18D775C522AD944300AE281E /* ContentView.swift in Sources */,
 				1839F4B025190F2A00BB00F1 /* AppMain.swift in Sources */,
-				CD4A36852C633D04003C6715 /* Model.swift in Sources */,
+				CD4A36872C64A182003C6715 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
