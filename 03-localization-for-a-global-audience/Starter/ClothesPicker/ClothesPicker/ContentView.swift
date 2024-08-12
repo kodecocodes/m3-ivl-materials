@@ -37,10 +37,12 @@ struct ContentView: View {
   @State var quantity = 1
   let item = Item(name: "Shirt", imageName: "tshirt.fill")
 
-  let model = Model(name: "Sam",
-                    height: 170, size: "M",
-                    preferredTermsOfAddress: [])
-  
+  let model = Model(
+    name: "Sam",
+    height: 170,
+    size: "M",
+    preferredTermsOfAddress: [])
+
   var body: some View {
     VStack {
       Grid {
@@ -48,7 +50,7 @@ struct ContentView: View {
           Text(item.name)
             .gridCellColumns(2)
         }
-        
+
         GridRow {
           VStack {
             Text("This is a man's \(item.name.lowercased()) that is never worn as well as by a woman.")
@@ -66,37 +68,41 @@ struct ContentView: View {
           .gridCellColumns(2)
           .font(.body)
         }
-        
+
         Divider()
-        
+
         GridRow {
-          ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "red", comment: "color"),
-                      fgColor: .red,
-                      imageName: item.imageName)
-          
-          ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "blue", comment: "color"),
-                      fgColor: .blue,
-                      imageName: item.imageName)
+          ColorButton(
+            colorChoice: $colorChoice,
+            color: String(localized: "red", comment: "color"),
+            fgColor: .red,
+            imageName: item.imageName)
+
+          ColorButton(
+            colorChoice: $colorChoice,
+            color: String(localized: "blue", comment: "color"),
+            fgColor: .blue,
+            imageName: item.imageName)
         }
-        
+
         Divider()
-        
+
         GridRow {
-          ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "green", comment: "color"),
-                      fgColor: .green,
-                      imageName: item.imageName)
-          
-          ColorButton(colorChoice: $colorChoice,
-                      color: String(localized: "black", comment: "color"),
-                      fgColor: .black,
-                      imageName: item.imageName)
+          ColorButton(
+            colorChoice: $colorChoice,
+            color: String(localized: "green", comment: "color"),
+            fgColor: .green,
+            imageName: item.imageName)
+
+          ColorButton(
+            colorChoice: $colorChoice,
+            color: String(localized: "black", comment: "color"),
+            fgColor: .black,
+            imageName: item.imageName)
         }
-        
+
         Divider()
-        
+
         GridRow {
           if let colorChoice {
             HStack {
@@ -127,6 +133,7 @@ struct ColorButton: View {
   let fgColor: Color
   let imageName: String
   var body: some View {
+    // swiftlint:disable:next multiple_closures_with_trailing_closure
     Button(action: { colorChoice = color }) {
       VStack {
         Image(systemName: imageName)
