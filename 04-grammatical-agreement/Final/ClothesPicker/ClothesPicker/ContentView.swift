@@ -36,18 +36,21 @@ struct ContentView: View {
   @State var colorChoice: AttributedString?
   @State var quantity = 1
   let item = Item(
-    name: String(localized: "Shirt",
-                comment: "item of clothing"),
+    name: String(localized: "Shirt", comment: "item of clothing"),
     imageName: "tshirt.fill")
-  
-  let model = Model(name: "Sam",
-                    height: 170, size: "M",
-                    preferredTermsOfAddress: [.neutral])
+
+  let model = Model(
+    name: "Sam",
+    height: 170,
+    size: "M",
+    preferredTermsOfAddress: [.neutral])
 
   var options: AttributedString.LocalizationOptions {
     var options = AttributedString.LocalizationOptions()
-    options.concepts = [.localizedPhrase(item.name),
-                        .termsOfAddress(model.preferredTermsOfAddress)]
+    options.concepts = [
+      .localizedPhrase(item.name),
+      .termsOfAddress(model.preferredTermsOfAddress)
+    ]
     return options
   }
 
@@ -58,15 +61,16 @@ struct ContentView: View {
           Text(item.name)
             .gridCellColumns(2)
         }
-        
+
         GridRow {
           VStack {
-            Text("This is a man's \(item.name.lowercased()) that is never worn as well as by a woman.",
-                 comment: "Description of item, same for all items")
-              .padding(.horizontal, 40)
-            
+            Text(
+              "This is a man's \(item.name.lowercased()) that is never worn as well as by a woman.",
+              comment: "Description of item, same for all items")
+            .padding(.horizontal, 40)
+
             Divider()
-            
+
             Text(
               AttributedString(
                 localized:
@@ -74,64 +78,70 @@ struct ContentView: View {
                 options: options))
 
             Divider()
-            
-            Text("Tap to select the color of your \(item.name.lowercased()):",
-                 comment: "Instruction to user")
+
+            Text(
+              "Tap to select the color of your \(item.name.lowercased()):",
+              comment: "Instruction to user")
           }
           .multilineTextAlignment(.center)
           .gridCellColumns(2)
           .font(.body)
         }
-        
+
         Divider()
-        
+
         GridRow {
-          ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(
-                        localized: "red",
-                        options: options,
-                        comment: "color"),
-                      fgColor: .red,
-                      imageName: item.imageName)
-          
-          ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(
-                        localized: "blue",
-                        options: options,
-                        comment: "color"),
-                      fgColor: .blue,
-                      imageName: item.imageName)
+          ColorButton(
+            colorChoice: $colorChoice,
+            color: AttributedString(
+              localized: "red",
+              options: options,
+              comment: "color"),
+            fgColor: .red,
+            imageName: item.imageName)
+
+          ColorButton(
+            colorChoice: $colorChoice,
+            color: AttributedString(
+              localized: "blue",
+              options: options,
+              comment: "color"),
+            fgColor: .blue,
+            imageName: item.imageName)
         }
-        
+
         Divider()
-        
+
         GridRow {
-          ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(
-                        localized: "green",
-                        options: options,
-                        comment: "color"),
-                      fgColor: .green,
-                      imageName: item.imageName)
-          
-          ColorButton(colorChoice: $colorChoice,
-                      color: AttributedString(
-                        localized: "black",
-                        options: options,
-                        comment: "color"),
-                      fgColor: .black,
-                      imageName: item.imageName)
+          ColorButton(
+            colorChoice: $colorChoice,
+            color: AttributedString(
+              localized: "green",
+              options: options,
+              comment: "color"),
+            fgColor: .green,
+            imageName: item.imageName)
+
+          ColorButton(
+            colorChoice: $colorChoice,
+            color: AttributedString(
+              localized: "black",
+              options: options,
+              comment: "color"),
+            fgColor: .black,
+            imageName: item.imageName)
         }
-        
+
         Divider()
-        
+
         GridRow {
           if let colorChoice {
             HStack {
               Stepper(value: $quantity, in: 1...10) {
-                Text("\(quantity) \(colorChoice) \(item.name.lowercased())",
-                     comment: "Displays [number] of [color] [item]")
-                  .padding(.horizontal, 60)
+                Text(
+                  "\(quantity) \(colorChoice) \(item.name.lowercased())",
+                  comment: "Displays [number] of [color] [item]")
+                .padding(.horizontal, 60)
               }
             }
             .gridCellColumns(2)
@@ -156,6 +166,7 @@ struct ColorButton: View {
   let fgColor: Color
   let imageName: String
   var body: some View {
+    // swiftlint:disable:next multiple_closures_with_trailing_closure
     Button(action: { colorChoice = color }) {
       VStack {
         Image(systemName: imageName)
