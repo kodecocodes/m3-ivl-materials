@@ -74,13 +74,13 @@ struct ContentView: View {
         GridRow {
           ColorButton(
             colorChoice: $colorChoice,
-            color: String(localized: "red", comment: "color"),
+            color: "red",
             fgColor: .red,
             imageName: item.imageName)
 
           ColorButton(
             colorChoice: $colorChoice,
-            color: String(localized: "blue", comment: "color"),
+            color: "blue",
             fgColor: .blue,
             imageName: item.imageName)
         }
@@ -90,13 +90,13 @@ struct ContentView: View {
         GridRow {
           ColorButton(
             colorChoice: $colorChoice,
-            color: String(localized: "green", comment: "color"),
+            color: "green",
             fgColor: .green,
             imageName: item.imageName)
 
           ColorButton(
             colorChoice: $colorChoice,
-            color: String(localized: "black", comment: "color"),
+            color: "black",
             fgColor: .black,
             imageName: item.imageName)
         }
