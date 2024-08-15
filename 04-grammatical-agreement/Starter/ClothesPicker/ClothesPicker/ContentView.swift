@@ -62,7 +62,9 @@ struct ContentView: View {
 
             Divider()
 
-            Text("🏃🏻‍➡️\(model.name) is \(model.height) cm tall. He wears size \(model.size).")
+            Text(
+              "🏃🏻‍➡️\(model.name) is \(model.height) cm tall. He wears size \(model.size).",
+              comment: "Description of model")
 
             Divider()
 

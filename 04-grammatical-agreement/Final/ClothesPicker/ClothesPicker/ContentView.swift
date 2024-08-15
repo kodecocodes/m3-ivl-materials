@@ -73,9 +73,9 @@ struct ContentView: View {
 
             Text(
               AttributedString(
-                localized:
-                  "🏃🏻‍➡️\(model.name) is \(model.height) cm tall. He wears size \(model.size).",
-                options: options))
+                localized: "🏃🏻‍➡️\(model.name) is \(model.height) cm tall. He wears size \(model.size).",
+                options: options,
+                comment: "Description of model"))
 
             Divider()
 
