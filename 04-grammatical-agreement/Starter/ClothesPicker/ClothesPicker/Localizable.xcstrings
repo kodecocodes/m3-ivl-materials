@@ -1,0 +1,171 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld %@ %@" : {
+      "comment" : "Displays [number] of [color] [item]",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$lld %2$@ %3$@"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$lld %2$@ %3$@s"
+                }
+              }
+            }
+          }
+        },
+        "fr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$lld %3$@ %2$@"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$lld %3$@s %2$@"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "🏃🏻‍➡️%@ is %lld cm tall. He wears size %@." : {
+      "comment" : "Description of model",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "🏃🏻‍➡️%1$@ is %2$lld cm tall. He wears size %3$@."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🏃🏻‍➡️%1$@ mesure %2$lld cm. Il porte une taille %3$@."
+          }
+        }
+      }
+    },
+    "black" : {
+      "comment" : "color",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "noir"
+          }
+        }
+      }
+    },
+    "blue" : {
+      "comment" : "color",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bleu"
+          }
+        }
+      }
+    },
+    "green" : {
+      "comment" : "color",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "vert"
+          }
+        }
+      }
+    },
+    "red" : {
+      "comment" : "color",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "rouge"
+          }
+        }
+      }
+    },
+    "Shirt" : {
+      "comment" : "item of clothing",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chemise"
+          }
+        }
+      }
+    },
+    "Tap to select the color of your %@:" : {
+      "comment" : "Instruction to user",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "device" : {
+              "ipad" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Click to select the color of your %@:"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "new",
+                  "value" : "Tap to select the color of your %@:"
+                }
+              }
+            }
+          }
+        },
+        "fr" : {
+          "variations" : {
+            "device" : {
+              "ipad" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Cliquez pour sélectionner la couleur de votre %@:"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Appuyez pour sélectionner la couleur de votre %@:"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "This is a man's %@ that is never worn as well as by a woman." : {
+      "comment" : "Description of item, same for all items",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C'est un %@ d'homme qui n'est jamais aussi bien porté que par une femme."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
